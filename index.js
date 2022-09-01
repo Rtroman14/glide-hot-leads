@@ -13,7 +13,7 @@ functions.http("glide-app-leads", async (req, res) => {
         let { recordID, baseID, client } = req.body;
 
         if (!client) {
-            await slackNotification(`Need to define client! \nbaseID: ${baseID}`);
+            await slackNotification("Client not defined!", req, "Need to define client");
             throw new Error("Need to define client");
         }
 
@@ -30,11 +30,9 @@ functions.http("glide-app-leads", async (req, res) => {
 
             res.send(newRow);
         } catch (error) {
-            console.log("glideAppLeads()", error);
+            console.log("glideAppLeads()", error.message);
 
-            await slackNotification(
-                `Error with: baseID: ${baseID} | recordID: ${recordID} --> ${error.message}`
-            );
+            await slackNotification(`Error with baseID: ${baseID}`, req, error.message);
 
             res.send(error);
         }

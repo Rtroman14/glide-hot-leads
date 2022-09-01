@@ -44,7 +44,7 @@ const slackNotification = require("./src/slackNotification");
             Email: prospect.Email || "",
             Status: "New Lead" || "",
             Response: prospect.Response || "",
-            "Response Date": new Date(prospect["Response Date"]) || "",
+            "Response Date": new Date(prospect["Response Date"]) || "", // Response Date
             // "Response Date": new Date(),
             "Year Built": Number(prospect["Year Built"]) || "",
             "Building Type": prospect["Building Type"] || "",

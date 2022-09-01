@@ -81,7 +81,7 @@ functions.http("glide-app-leads", async (req, res) => {
 //     client: "",
 // };
 
-// const response = await fetch("https://google.com/glideAppLeads", {
+// const response = await fetch("https://glide-app-leads-u7tgkfoxnq-uc.a.run.app", {
 //     method: "POST",
 //     body: JSON.stringify(body),
 //     headers: {
