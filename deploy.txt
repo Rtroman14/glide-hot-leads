@@ -1,0 +1,3 @@
+gcloud functions deploy glide-app-leads --trigger-http --runtime=nodejs16 --gen2 --region=us-central1 --memory=1024mb --allow-unauthenticated --timeout=30s --env-vars-file .env.yaml
+
+--set-env-vars APP_ID=JW4ARCL0ygpRLFHy4Wo2,GLIDE_API_KEY=729fcb3b-ddc1-4de3-b9b3-d54ac837d48b,AIRTABLE_API_KEY=key2tZxeaXDfyBJ9k,SLACK_ERROR_ALERTS=https://hooks.slack.com/services/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

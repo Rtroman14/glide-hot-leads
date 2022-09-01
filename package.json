@@ -1,0 +1,19 @@
+{
+  "name": "glide-app-leads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.1.2",
+    "airtable": "^0.11.4",
+    "axios": "^0.27.2",
+    "date-fns": "^2.29.2",
+    "dotenv": "^16.0.2"
+  }
+}
